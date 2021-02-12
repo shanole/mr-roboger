@@ -9,6 +9,9 @@ function mrRoboger(num) {
       else if (digit === "2") {
         output.push("Boop");
       }
+      else if (digit === "3") {
+        output.push("Won't you be my neighbor?");
+      }
       else {
         output.push(i);
       }
@@ -17,5 +20,5 @@ function mrRoboger(num) {
   return output;
 }
 
-const neighborhood = mrRoboger(3);
+const neighborhood = mrRoboger(4);
 console.log(neighborhood);
