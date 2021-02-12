@@ -1,10 +1,18 @@
 function mrRoboger(num) {
   let output = []
   for (let i=0; i <= num; i++) {
-    output.push(i);
+    const numString = i.toString();
+    for (const digit of numString) {
+      if (digit === "1") {
+        output.push("Beep");
+      }
+      else {
+        output.push(i);
+      }
+    }
   }
   return output;
 }
 
-const neighborhood = mrRoboger(0);
+const neighborhood = mrRoboger(3);
 console.log(neighborhood);
