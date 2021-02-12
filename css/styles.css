@@ -1,3 +1,9 @@
 #output {
   display: none;
 }
+
+#output p {
+  font-family:'Courier New', Courier, monospace;
+  font-weight:500;
+  font-size: 40px;
+}
