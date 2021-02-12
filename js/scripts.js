@@ -31,7 +31,7 @@ function mrRoboger(num) {
           output.push("Boop")
         }
         else {
-          output.push("Won't you be my neighbor?")
+          output.push(["Won't you be my neighbor?"])
         }
       }
     }
@@ -43,3 +43,21 @@ function mrRoboger(num) {
 }
 
 // UI logic
+
+$(document).ready(function() {
+  $("form#input").submit(function(event) {
+    event.preventDefault();
+
+    const userNumber = parseInt($("input#number").val());
+    const robotResponse = (mrRoboger(userNumber)).join(" ");
+
+    $("#robotSays").text(robotResponse);
+
+    $("form#input").hide();
+    $("#output").show();
+    
+    $('#goBack').click(function() {
+      window.location.href='index.html';
+    });
+  })
+})
