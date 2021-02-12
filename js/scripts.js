@@ -6,6 +6,9 @@ function mrRoboger(num) {
       if (digit === "1") {
         output.push("Beep");
       }
+      else if (digit === "2") {
+        output.push("Boop");
+      }
       else {
         output.push(i);
       }
