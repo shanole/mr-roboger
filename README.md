@@ -58,8 +58,11 @@ Expect(mrRoger(10)).toEqual([0,'Beep','Boop,3,4,5,6,7,8,9,'Beep']);
 Test: "It should replace multi-digit numbers containing 2 with 'Boop', even if they also contain 1"
 Expect(mrRoger(12)).toEqual([0,'Beep','Boop,3,4,5,6,7,8,9,'Beep','Beep','Boop']);
 
-Test: "It should replace multi-digit numbers containing 3 with 'Won't you be my neighbor?' even if they also contain 1 and/or 2"
-Expect(mrRoger(13)).toEqual([0,'Beep','Boop,3,4,5,6,7,8,9,'Beep','Beep','Boop']);
+Test: "It should replace multi-digit numbers containing 3 with 'Won't you be my neighbor?' even if they also contain 1"
+Expect(mrRoger(13)).toEqual([0,'Beep','Boop,3,4,5,6,7,8,9,'Beep','Beep','Boop', 'Won't you be my neighbor?']);
+
+Test: "It should replace multi-digit numbers containing 3 with 'Won't you be my neighbor?' even if they also contain 2"
+Expect(mrRoger(23)).toEqual([0,'Beep','Boop,3,4,5,6,7,8,9,'Beep','Beep','Boop', 'Won't you be my neighbor?', 'Beep', 'Beep', 'Beep', 'Beep', 'Beep', 'Beep', 'Boop', 'Boop', 'Boop', 'Won't you be my neighbor?]);
 ```
 ## License
 
