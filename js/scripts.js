@@ -21,16 +21,19 @@ function mrRoboger(num) {
       }
     }
     else {
-      if (numString.includes("1") === true && numString.includes("2") === false) {
+      if (numString.includes("1") === true && numString.includes("2") === false && numString.includes("3") === false) {
         output.push("Beep")
       }
       else if (numString.includes("2") === true && numString.includes("3") === false) {
         output.push("Boop")
+      }
+      else {
+        output.push("Won't you be my neighbor?")
       }
     }
   }
   return output;
 }
 
-const neighborhood = mrRoboger(12);
+const neighborhood = mrRoboger(23);
 console.log(neighborhood);
