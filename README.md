@@ -1,6 +1,6 @@
-# _Mr Roboger's Neighborhood_
+# Mr Roboger's Neighborhood
 
-#### _This project is for Epicodus Code Review #3 made to demonstrate understanding of arrays and looping in JavaScript_
+#### This project is for Epicodus Code Review #3 made to demonstrate understanding of arrays and looping in JavaScript
 
 #### By Shannon Lee
 
@@ -16,15 +16,17 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+This is a web application that takes a number input from the user via a form, and then returns a range of numbers from 0 to the user inputted number with the following exceptions (in order of increasing importance):
+
+* Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
+* Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
+* Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Clone this repository to your machine
+* Navigate to the top level of this directory `mr-roboger/`
+* Open `index.html` in your web browser
 
 _{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
 
@@ -65,9 +67,14 @@ Expect(mrRoger(23)).toEqual([0,'Beep','Boop,3,4,5,6,7,8,9,'Beep','Beep','Boop', 
 
 ```
 ## License
+[MIT](https://opensource.org/licenses/MIT)
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_Copyright (c) Shannon Lee 2021_
+_<shannonleehj@gmail.com>_
 
-## Contact Information
+## Resources
+[Learn How to Program](https://www.learnhowtoprogram.com/introduction-to-programming-part-time-c-and-react-track)
 
-_Shannon Lee <shannonleehj@gmail.com>_
+[Bootstrap](https://getbootstrap.com/)
+
+[jQuery](https://api.jquery.com/)
