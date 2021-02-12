@@ -1,5 +1,4 @@
 // Business logic
-
 function mrRoboger(num) {
   let output = [];
     for (let i=0; i <= num; i++) {
