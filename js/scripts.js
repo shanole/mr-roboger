@@ -1,3 +1,5 @@
+// Business logic
+
 function mrRoboger(num) {
   let output = []
   for (let i=0; i <= num; i++) {
@@ -35,5 +37,4 @@ function mrRoboger(num) {
   return output;
 }
 
-const neighborhood = mrRoboger(23);
-console.log(neighborhood);
+// UI logic
