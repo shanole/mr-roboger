@@ -1,7 +1,7 @@
 // Business logic
 
 function mrRoboger(num) {
-  let output = []
+  let output = [];
     for (let i=0; i <= num; i++) {
       const numString = i.toString();
       if (numString.length === 1) {
@@ -47,7 +47,7 @@ $(document).ready(function() {
     const robotResponse = (mrRoboger(parseInt(userNumber)).join(" "));
 
     if (robotResponse === "") {
-      $("#robotSays").text("Sorry, can you please give me a number?");
+      $("#robotSays").text("Sorry, can you please give me a whole number?");
     }
     else {
       $("#robotSays").text(robotResponse);
