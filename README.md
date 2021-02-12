@@ -1,15 +1,18 @@
-# _{Application Name}_
+# _Mr Roboger's Neighborhood_
 
-#### _{Brief description of application}_
+#### _This project is for Epicodus Code Review #3 made to demonstrate understanding of arrays and looping in JavaScript_
 
-#### By _**{List of contributors}**_
+#### By Shannon Lee
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
+* JQuery
+* Git
+* VS Code
 
 ## Description
 
@@ -30,10 +33,38 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 * _Any known issues_
 * _should go here_
 
+## Tests
+```
+Describe: mrRoboger()
+
+Test: "It should return an array with a 0 if the number 0 is inputted"
+Expect(mrRoboger(0).toEqual([0]);
+
+Test: "It should return a range of numbers from 0 to the user inputted number."
+Expect(mrRoboger(4)).toEqual([0,1,2,3,4]);
+
+Test: "It should replace all numbers that contain 1 with 'Beep'"
+Expect(mrRoger(3)).toEqual([0,'Beep',2,3]);
+
+Test: "It should replace all numbers that contain 2 with 'Boop'"
+Expect(mrRoger(3)).toEqual([0,'Beep','Boop',3]);
+
+Test: "It should replace all numbers that contain 3 with 'Won't you be my neighbor?'"
+Expect(mrRoger(3)).toEqual([0,'Beep','Boop','Won't you be my neighbor?']);
+
+Test: "If the user inputted number has a 1 and a 2, replace the number with 'Boop'"
+Expect(mrRoger(12)).toEqual([0,'Beep','Boop','Won't you be my neighbor?',4,5,6,7,8,9,'Beep','Beep','Boop']);
+
+Test: "If the user inputted number has a 3 and a 1, replace the number with 'Won't you be my neighbor?'"
+Expect(mrRoger(13)).toEqual([0,'Beep','Boop','Won't you be my neighbor?',4,5,6,7,8,9,'Beep','Beep','Boop','Won't you be my neighbor?']);
+
+Test: "If the user inputted number has a 3 and a 2, replace the number with 'Wont you be my neighbor?'"
+Expect(mrRoger(23)).toEqual([0,'Beep','Boop','Won't you be my neighbor?',4,5,6,7,8,9,'Beep','Beep','Boop','Won't you be my neighbor?','Beep','Beep', 'Beep', 'Beep', 'Beep', 'Beep', 'Boop', 'Boop', 'Boop', 'Won't you be my neighbor?']);
+```
 ## License
 
 _{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
 
 ## Contact Information
 
-_{Add your contact information here.}_
+_Shannon Lee <shannonleehj@gmail.com>_
