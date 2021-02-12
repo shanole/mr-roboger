@@ -29,8 +29,11 @@ function mrRoboger(num) {
         else if (numString.includes("2") === true && numString.includes("3") === false) {
           output.push("Boop")
         }
-        else {
+        else if (numString.includes("3")) {
           output.push("Won't you be my neighbor?");
+        }
+        else {
+          output.push(numString);
         }
       }
     }
