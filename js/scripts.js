@@ -3,8 +3,9 @@ function mrRoboger(num) {
   for (let i=0; i <= num; i++) {
     const numString = i.toString();
     for (const digit of numString) {
-      if (digit === "1") {
+      if (digit.includes("1")) {
         output.push("Beep");
+        break;
       }
       else if (digit === "2") {
         output.push("Boop");
@@ -20,5 +21,5 @@ function mrRoboger(num) {
   return output;
 }
 
-const neighborhood = mrRoboger(4);
+const neighborhood = mrRoboger(10);
 console.log(neighborhood);
