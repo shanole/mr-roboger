@@ -2,7 +2,6 @@
 
 function mrRoboger(num) {
   let output = []
-  if (typeof num === "number") {
     for (let i=0; i <= num; i++) {
       const numString = i.toString();
       if (numString.length === 1) {
@@ -31,16 +30,12 @@ function mrRoboger(num) {
           output.push("Boop")
         }
         else {
-          output.push(["Won't you be my neighbor?"])
+          output.push("Won't you be my neighbor?");
         }
       }
     }
     return output;
   }
-  else {
-    return "Sorry, please give me a number.";
-  }
-}
 
 // UI logic
 
@@ -48,14 +43,21 @@ $(document).ready(function() {
   $("form#input").submit(function(event) {
     event.preventDefault();
 
-    const userNumber = parseInt($("input#number").val());
-    const robotResponse = (mrRoboger(userNumber)).join(" ");
+    const userNumber = $("input#number").val();
+    const robotResponse = (mrRoboger(parseInt(userNumber)).join(" "));
 
-    $("#robotSays").text(robotResponse);
+    if (robotResponse === "") {
+      $("#robotSays").text("Sorry, can you please give me a number?");
+    }
+    else {
+      $("#robotSays").text(robotResponse);
+    }
+
+    $("#yourNumber").text(userNumber);
 
     $("form#input").hide();
     $("#output").show();
-    
+
     $('#goBack').click(function() {
       window.location.href='index.html';
     });
