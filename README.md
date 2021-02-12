@@ -64,8 +64,6 @@ Expect(mrRoger(13)).toEqual([0,'Beep','Boop,3,4,5,6,7,8,9,'Beep','Beep','Boop', 
 Test: "It should replace multi-digit numbers containing 3 with 'Won't you be my neighbor?' even if they also contain 2"
 Expect(mrRoger(23)).toEqual([0,'Beep','Boop,3,4,5,6,7,8,9,'Beep','Beep','Boop', 'Won't you be my neighbor?', 'Beep', 'Beep', 'Beep', 'Beep', 'Beep', 'Beep', 'Boop', 'Boop', 'Boop', 'Won't you be my neighbor?]);
 
-Test: "It should return an error message if it is given a non-number input."
-Expect(mrRogers("hi)).toEqual("Sorry, please give me a number.")
 ```
 ## License
 
