@@ -30,8 +30,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* If you put a non-integer into the form, or a number followed by non-numeric characters, the form will only use the first number it finds as the input value.
 
 ## Tests
 ```
