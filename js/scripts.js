@@ -1,5 +1,9 @@
 function mrRoboger(num) {
-  return 0;
+  let output = []
+  for (let i=0; i <= num; i++) {
+    output.push(i);
+  }
+  return output;
 }
 
 const neighborhood = mrRoboger(0);
